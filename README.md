@@ -10,23 +10,23 @@ PHP 7.4 or higher
 MySQL
 A web server (e.g., XAMPP, WAMP, or MAMP)
 Installation
+
 1. Clone the Repository
 Clone this project to your local machine using Git:
-
 git clone git@github.com:yourusername/todo-app.git
 cd todo-app
-2. Set Up the Database
+
+3. Set Up the Database
 Run the database setup script: Execute the following command to create the database and tables automatically:
-
 php setup_database.php
-This will:
 
+This will:
 Create a database named tasks_db.
 Create a table named tasks with the necessary structure.
 Alternatively, you can manually create the database:
-
 Import the SQL file database.sql (if provided) into your database.
 Use tools like phpMyAdmin or MySQL CLI for this step.
+
 3. Configure the Database
 Open the db.php file in the root directory.
 Update the database credentials if necessary:
@@ -34,7 +34,8 @@ define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
 define('DB_NAME', 'tasks_db');
-4. Start the Application
+
+5. Start the Application
 Place the project in your web server's root directory (e.g., htdocs for XAMPP).
 Start your web server.
 Access the app in your browser:
